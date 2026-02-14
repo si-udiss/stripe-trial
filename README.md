@@ -19,8 +19,8 @@ Stripe serta cara melakukan testing transaksi menggunakan mode sandbox.
 ### Clone Repository
 
 ```bash
-    git clone https://github.com/username/project-name.git
-    cd project-name
+    git clone https://github.com/si-udiss/stripe-trial.git
+    cd stripe-trial
 ```
 
 ### Install Dependencies
@@ -39,7 +39,6 @@ Buat file `.env`
     PORT=3000
     STRIPE_SECRET_KEY=sk_test_xxxxx
     STRIPE_WEBHOOK_SECRET=whsec_xxxxx
-    CLIENT_URL=http://localhost:5173
 ```
 
 ------------------------------------------------------------------------
@@ -145,11 +144,9 @@ Frontend → Backend → Stripe → Checkout Page → Webhook → Backend
 ## Struktur Folder
 
     src/
-     ├── controllers/
      ├── routes/
-     ├── services/
-     ├── middleware/
-     └── app.js
+     ├── models/
+     └── server.js
 
 ------------------------------------------------------------------------
 
